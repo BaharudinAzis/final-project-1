@@ -4,9 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- External CSS -->
     <link rel="stylesheet" href="style.css" />
+    <!-- External JS -->
     <link rel="text/javascript" href="main.js" />
+    <!-- CDN Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- CDN Icons Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Logo Title -->
     <link rel="icon" href="assets/images/logo-title.png" />
+    <!-- Link Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -37,12 +53,12 @@
         <div class="nav-right">
           <a href="#">Home</a>
           <a href="#about">About</a>
-          <a href="#">Contact</a>
+          <a href="#footer">Contact</a>
         </div>
       </nav>
     </header>
 
-    <section class="container">
+    <section class="section-1">
       <div class="main-left">
         <h1>Welcome to Bahar Entertainment</h1>
         <p>
@@ -120,11 +136,7 @@
             to ensure the success of each event. With state-of-the-art
             facilities, strong resources, and an extensive network in the
             entertainment industry, we are ready to deliver spectacular and
-            impressive experiences for visitors. No matter how big or complex
-            the event of your dreams is, Bahar Entertainment has the
-            capabilities and commitment to make it an unforgettable success.
-            Entrust your event to us, and we will help you bring your vision to
-            life and create extraordinary moments for everyone in attendance.
+            impressive experiences for visitors.
           </p>
           <button class="btn-about btn-green" style="margin-top: 20px">
             Read More
@@ -141,50 +153,68 @@
     </section>
     <section id="portfolio">
       <div class="portfolio">
-        <h2>Our Portfolio</h2>
+        <h2 class="portfolio-title">Our Portfolio</h2>
         <p>
           Here are some examples of our previous work and projects in the
           entertainment industry.
         </p>
         <div class="portfolio-items">
-          <!-- Portfolio item 1 -->
           <div class="portfolio-item">
-            <img
-              src="assets/images/portfolio-1.jpg"
-              alt="Portfolio Item 1"
-            />
-            <h3>Project 1</h3>
-            <p>Entertaining the audience with the largest DJ music event in Asia.</p>
+            <img src="assets/images/portfolio-1.jpg" alt="Portfolio Item 1" />
+            <h3>DJ Music Concert</h3>
+            <p>
+              Entertaining the audience with the largest DJ music event in Asia.
+            </p>
           </div>
 
-          <!-- Portfolio item 2 -->
           <div class="portfolio-item">
-            <img
-              src="assets/images/portfolio-2.jpg"
-              alt="Portfolio Item 2"
-            />
-            <h3>Project 2</h3>
-            <p>Description of Project 2</p>
+            <img src="assets/images/portfolio-2.jpg" alt="Portfolio Item 2" />
+            <h3>Recording Session</h3>
+            <p>
+              The best recording and sound engineering services offer an
+              unparalleled level of expertise and precision.
+            </p>
           </div>
 
-          <!-- Portfolio item 3 -->
           <div class="portfolio-item">
-            <img
-              src="assets/images/portfolio-3.jpg"
-              alt="Portfolio Item 3"
-            />
-            <h3>Project 3</h3>
-            <p>Description of Project 3</p>
+            <img src="assets/images/portfolio-3.jpg" alt="Portfolio Item 3" />
+            <h3>All Genre Fest</h3>
+            <p>
+              Extraordinary celebration of music that transcends boundaries and
+              embraces the diverse spectrum of musical genres.
+            </p>
           </div>
-
-          <!-- Add more portfolio items here if needed -->
         </div>
       </div>
     </section>
 
-    <footer>
-      <div class="footer">
-        <p>&copy; Bahar Entertainment</p>
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2023 All Rights Reserved by 
+              <a href="#">Bahar Entertainment</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="bi bi-facebook"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="#"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a class="github" href="#"><i class="bi bi-github"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </footer>
   </body>

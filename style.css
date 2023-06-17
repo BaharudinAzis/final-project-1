@@ -1,11 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Rosario", sans-serif;
+  margin-top: 60px;
+  padding-bottom: 30px;
+}
+
 nav {
-  padding: 20px;
+  padding: 30px;
   display: flex;
   box-shadow: 1px 1px 5px red;
   position: fixed;
   top: 0;
   left: 0;
-  background-color:black;
+  background-color: black;
   width: 100%;
   height: 10px;
   display: flex;
@@ -17,7 +30,7 @@ nav {
   text-align: center;
   justify-content: center;
   align-items: center;
-  font-family: "Squada One", cursive;
+  font-family: "Squada One";
 }
 
 .logo-title a {
@@ -41,7 +54,7 @@ nav {
   margin-right: 50px;
 }
 
-.container {
+.section-1 {
   display: flex;
   padding: 50px;
 }
@@ -117,7 +130,6 @@ nav {
   justify-content: center;
 }
 
-
 .about-box h2 {
   margin-bottom: 20px;
 }
@@ -167,14 +179,13 @@ nav {
   padding: 50px 0;
 }
 
-.portfolio h2 {
-  font-size: 30px;
-  color: #333;
+.portfolio-title {
+  display: inline;
+  border-bottom: 2px solid red;
 }
 
 .portfolio p {
-  font-size: 16px;
-  color: #666;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 
@@ -191,35 +202,81 @@ nav {
 
 .portfolio-item img {
   width: 100%;
-  height: auto;
+  height: 50%;
   border-radius: 5px;
 }
 
 .portfolio-item h3 {
   font-size: 18px;
-  color: #333;
   margin-top: 10px;
   margin-bottom: 5px;
 }
 
-.portfolio-item p {
-  font-size: 14px;
-  color: #666;
+.site-footer {
+  background-color: #26272b;
+  padding: 30px;
+  color: #737373;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-footer a {
+  color: #737373;
+}
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.site-footer .copyright-text {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.site-footer .social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.site-footer .social-icons li {
+  margin-right: 10px;
+}
+
+.site-footer .social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #818a91;
+  transition: color 0.3s ease;
+  background-color: #eceeef;
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  text-align: center;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-.footer {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.site-footer .social-icons a:hover {
+  color: #007bff;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+}
+.social-icons a.facebook:hover {
+  background-color: #1877F2;
+}
+.social-icons a.instagram:hover {
+  background-color: #E4405F;
+}
+.social-icons a.github:hover {
+  background-color: #181717;
+}
+.social-icons a.linkedin:hover {
+  background-color: #007bb6;
 }
