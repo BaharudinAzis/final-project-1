@@ -346,3 +346,139 @@ nav {
 .social-icons a.linkedin:hover {
   background-color: #007bb6;
 }
+
+/* sticky content */
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+
+/* Responsif pada tablet */
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+
+  .logo-title a {
+    font-size: 20px;
+  }
+
+  .nav-right a {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+
+  .section-1 {
+    flex-direction: column;
+  }
+
+  .main-left,
+  .main-right {
+    margin: 20px;
+  }
+
+  .main-left h1 {
+    font-size: x-large;
+  }
+
+  .btn-ml-1,
+  .btn-ml-2 {
+    width: 150px;
+    margin-top: 20px;
+  }
+
+  .card-about {
+    flex-direction: column;
+  }
+
+  .about-box,
+  .about-img-box {
+    width: 100%;
+  }
+
+  .about-img {
+    height: 200px;
+  }
+
+  .about-right .about-box {
+    order: 1;
+  }
+
+  .about-right .about-img-box {
+    order: 2;
+  }
+}
+
+/* Responsif pada ponsel */
+@media only screen and (max-width: 480px) {
+  body {
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  nav {
+    padding: 5px;
+  }
+
+  .logo-title a {
+    font-size: 16px;
+  }
+
+  .nav-right a {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  .toggle-switch {
+    width: 80px;
+    height: 30px;
+  }
+
+  .toggle-switch::before {
+    top: 3px;
+    left: 6px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+  }
+
+  .section-1 {
+    padding: 20px;
+  }
+
+  .main-left,
+  .main-right {
+    margin: 10px;
+  }
+
+  .main-left h1 {
+    font-size: large;
+  }
+
+  .btn-ml-1,
+  .btn-ml-2 {
+    width: 120px;
+    margin-top: 10px;
+  }
+
+  .about {
+    margin: 20px;
+  }
+
+  .about-box p {
+    line-height: 22px;
+  }
+
+  .about-img {
+    height: 150px;
+  }
+}
+
